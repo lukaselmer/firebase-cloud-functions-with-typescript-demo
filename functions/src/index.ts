@@ -1,8 +1,5 @@
-import * as functions from 'firebase-functions';
+import { productsApp } from './products/products-controller';
+import { currentDate } from './utility';
 
-// Start writing Firebase Functions
-// https://firebase.google.com/functions/write-firebase-functions
-
-export const helloWorld = functions.https.onRequest((request, response) => {
-  response.send('Hello from Meetup!');
-});
+export const date = currentDate;
+export const products = productsApp;
