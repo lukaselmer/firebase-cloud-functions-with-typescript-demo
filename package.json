@@ -1,0 +1,20 @@
+{
+  "name": "functions",
+  "description": "Firebase Cloud Functions with TypeScript Demo",
+  "scripts": {
+    "serve": "firebase serve",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "^5.4.2",
+    "firebase-functions": "^0.7.3"
+  },
+  "private": false,
+  "devDependencies": {
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
+  }
+}
